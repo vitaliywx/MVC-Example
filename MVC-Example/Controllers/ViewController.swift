@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupView()
         let model = Stocks.testData
         setupData(with: model)
         setupInitialState()
@@ -27,9 +26,6 @@ class ViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: UIButton) {
         displayData(index: getRandomInt())
-    }
-    
-    private func setupView() {
     }
     
     private func setupInitialState() {
